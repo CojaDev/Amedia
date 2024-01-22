@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b9b9b9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8b8b8b;
+}
+
+body {
+  @apply bg-black/95 overflow-x-hidden scroll-smooth h-screen;
+}
+main {
+  overflow-x: hidden;
+  height: 100vh;
+}
+article {
+  transition: all 0.2s ease-in-out;
+}
+main {
+  transition: all 0.2s ease-in-out;
+  height: 100vh;
+  overflow: auto;
+}
+.normalNavBtn {
+  @apply select-none font-semibold hover:scale-105 hover:opacity-85 transition-all active:scale-95;
+}
+.filledNavBtn {
+  @apply px-4 select-none font-semibold hover:scale-[102%] transition-all active:scale-[98%] border-2 border-orange-400 rounded-full  hover:bg-orange-400 bg-transparent hover:text-black text-white;
+}
+.normalMobileNavBtn {
+  @apply py-4 select-none font-semibold hover:scale-105 hover:opacity-85 transition-all active:scale-95 w-full text-center text-xl;
+}
+.filledMobileNavBtn {
+  @apply py-4 px-4 select-none font-semibold hover:scale-[102%] transition-all active:scale-[98%] border border-white rounded-3xl bg-white hover:opacity-85 text-black w-full text-center text-xl;
+}
+.btn-primary {
+  @apply p-2 px-4  border-2 border-orange-400 sm:text-lg bg-orange-400 text-black hover:bg-transparent hover:text-white transition-all rounded-full  font-semibold active:scale-[0.98];
+}
+.btn-secondary {
+  @apply p-2 px-4 border-2 border-orange-400 sm:text-lg hover:bg-orange-400 hover:text-black bg-transparent text-white transition-all rounded-full  font-semibold active:scale-95;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  background: black;
+  min-height: 200px;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('https://i.ibb.co/wQZVxxk/wave.png');
+  background-size: 1000px 100px;
+  filter: brightness(0);
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 10s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 10s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 9s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 9s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+.flare {
+  position: fixed;
+  border: 2px solid #ffffff2b;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important ;
+  backdrop-filter: blur(1px);
+  background-color: #ffffff9d;
+  transition: width 0.6s ease-in-out, height 0.6s ease-in-out;
+  cursor: none !important; /* Let's hide the default cursor so it looks way better */
+}
+
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 768px) {
+  .flare {
+    display: none;
+    width: 0;
+    height: 0;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out,
+      opacity 0.4s ease-in-out;
+  }
+}
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
+}
