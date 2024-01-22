@@ -24,14 +24,11 @@ export class AnchorPlugin extends ScrollbarPlugin {
   };
 
   jumpToHash = (hash) => {
-    console.log('hash:', hash);
     const { scrollbar } = this;
 
     if (!hash) {
       return;
     }
-
-    console.log('scrollTop:', scrollbar.containerEl.scrollTop);
 
     // reset scrollTop
     scrollbar.containerEl.scrollTop = 0;

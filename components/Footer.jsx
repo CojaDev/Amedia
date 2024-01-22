@@ -2,7 +2,7 @@ import { NAV_LINKS } from '@/constants';
 
 const Footer = () => {
   return (
-    <footer className="footer ">
+    <footer className="footer !pb-16 ">
       <div className="waves">
         <div className="wave" id="wave1"></div>
         <div className="wave" id="wave2"></div>
@@ -17,7 +17,7 @@ const Footer = () => {
           <li className="menu__item">
             <a
               href={link.href}
-              key={link.label}
+              key={link.key}
               draggable="false"
               className="menu__link"
             >
