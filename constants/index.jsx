@@ -33,9 +33,9 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'Propper Real Estate',
+    title: 'Prime Estates',
     description:
-      'Explore premium real estate offerings with Propper. Find your dream home or property with our user-friendly landing page.',
+      'Explore premium real estate offerings with Prime Estates. Find your dream home or property with our user-friendly landing page.',
     image: '/images/land.webp',
     link: 'https://cojadev.github.io/Real-Estate-landing-page/',
   },
@@ -45,7 +45,7 @@ export const projectsData = [
     description:
       'Experience the joy of bird breeding with our parrot breeding website. Your gateway to a world of colorful and lively parrots!',
     image: '/images/odg.webp',
-    link: 'http://odgajivacnica.great-site.net/?i=1',
+    link: 'https://cojadev.github.io/Odgajivacnica-v.3/',
   },
 ];
 export const WHYUS = [
