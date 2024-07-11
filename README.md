@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Amedia Portfolio](amedia.png)
 
-## Getting Started
+# Amedia Studio Website
 
-First, run the development server:
+This website was created for Amedia Studio, a company specializing in web development, design, and digital solutions. The site showcases their services, includes a contact form, and highlights the reasons why clients should work with them. It serves as a comprehensive landing page for potential clients to learn about Amedia Studio.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Services Section**: Detailed information about the various services offered by Amedia Studio.
+- **Contact Form**: Easy-to-use contact form for potential clients to reach out to the studio.
+- **Why Work With Us**: Section highlighting the unique benefits and strengths of Amedia Studio.
+- **Responsive Design**: Optimized for viewing on all devices, including desktops, tablets, and mobile phones.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- HTML
+- CSS
+- React
+- Next.js
+- Three.js
+- TailwindCSS
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/CojaDev/Amedia.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd amedia-studio-website
+    ```
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
+4. Run the development server:
+    ```sh
+    npm run dev
+    ```
+5. Open your browser and visit `http://localhost:3000` to view the website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Navigate through the various sections to learn about Amedia Studio's services.
+2. Use the contact form to get in touch with the studio for inquiries or project discussions.
+3. Explore the "Why Work With Us" section to understand the benefits of partnering with Amedia Studio.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you would like to contribute to this project, please fork the repository and submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me at [amarcetic04@gmail.com](mailto:amarcetic04@gmail.com).
